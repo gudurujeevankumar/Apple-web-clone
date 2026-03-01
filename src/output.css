@@ -219,6 +219,18 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-40 {
+    margin-bottom: calc(var(--spacing) * 40);
+  }
+  .mb-45 {
+    margin-bottom: calc(var(--spacing) * 45);
+  }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
   }
@@ -356,6 +368,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-evenly {
     justify-content: space-evenly;

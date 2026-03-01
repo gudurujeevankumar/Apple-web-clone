@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="h-11 w-full bg-[#181818] flex justify-around">
         <nav class="flex gap-9 items-center w-5xl ml-10 text-[#a2a2a3] font-normal text-xs tracking-wider">
             <i class="fa-brands fa-apple text-[19px]"></i>
@@ -29,13 +30,40 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-chisel fa-regular fa-bag-shopping"></i>
         </nav>
-
     </header>
+
+    <!-- Bottom header -->
     <div class="bg-[#1d1d1f] h-11 w-full text-white flex justify-center items-center text-[14px] font-[380]">
         <p>Get up to 6 months of No Cost EMI* plus up to ₹10000 instant cashback‡ on selected products with eligible
             cards. <a href="" class="text-blue-500">Shop ></a></p>
     </div>
 
+    <section class="relative h-screen w-full overflow-hidden">
+  
+  <!-- Background Video -->
+  <video 
+    src="./largetall_2x.mov" 
+    autoplay 
+    muted 
+    playsinline
+    class="absolute inset-0 w-full h-[84%] object-cover">
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+    <h1 class="text-6xl font-semibold tracking-tight">
+      Where ideas dazzle.
+    </h1>
+    <p class="mt-4 text-xl tracking-wide opacity-90">
+      Apple Borivali is now open.
+    </p>
+
+    <button class="mt-6 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full transition">
+      Learn more
+    </button>
+  </div>
+
+</section>
 </body>
 
 </html>

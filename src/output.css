@@ -30,6 +30,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --text-8xl: 6rem;
@@ -39,9 +41,13 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --tracking-tight: -0.025em;
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
     --tracking-wider: 0.05em;
+    --leading-tight: 1.25;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -195,8 +201,23 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .col-auto {
     grid-column: auto;
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
@@ -237,8 +258,56 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
   .h-120 {
     height: calc(var(--spacing) * 120);
+  }
+  .h-\[0\%\] {
+    height: 0%;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[82\%\] {
+    height: 82%;
+  }
+  .h-\[83\%\] {
+    height: 83%;
+  }
+  .h-\[84\%\] {
+    height: 84%;
+  }
+  .h-\[85\%\] {
+    height: 85%;
+  }
+  .h-\[85\] {
+    height: 85;
+  }
+  .h-\[90\%\] {
+    height: 90%;
+  }
+  .h-\[95\%\] {
+    height: 95%;
+  }
+  .h-\[calc\(100vh-40px\)\] {
+    height: calc(100vh - 40px);
+  }
+  .h-\[calc\(100vh-88px\)\] {
+    height: calc(100vh - 88px);
+  }
+  .h-dvh {
+    height: 100dvh;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -263,6 +332,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-baseline {
     align-items: baseline;
@@ -303,6 +375,12 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .bg-\[\#1D1D1F\] {
     background-color: #1D1D1F;
   }
@@ -318,6 +396,24 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .text-center {
+    text-align: center;
+  }
   .align-middle {
     vertical-align: middle;
   }
@@ -332,6 +428,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-7xl {
     font-size: var(--text-7xl);
@@ -383,6 +483,10 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
   .font-\[380\] {
     --tw-font-weight: 380;
     font-weight: 380;
@@ -414,6 +518,10 @@
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
   }
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
@@ -447,11 +555,30 @@
   .text-white {
     color: var(--color-white);
   }
+  .opacity-90 {
+    opacity: 90%;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .hover\:bg-blue-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-600);
+      }
+    }
+  }
 }
 @layer base {
   html {
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -464,6 +591,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
     }

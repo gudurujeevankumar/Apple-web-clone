@@ -372,3 +372,46 @@ html {
   color: whitesmoke;
 }
 
+/* Footer section */
+
+footer {
+  height:110dvh;
+  background-color: #f5f5f7;
+}
+
+.foot-layout {
+  height: 100%;
+  width: 72%;
+  margin: 0px 15%;
+  margin-top: 20px;
+}
+
+footer p , a{
+  font-size: 12px;
+  color: #8e8e90;
+  padding-top: 30px;
+  text-decoration: none;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.foot-links {
+  display: flex;
+  gap:5px;
+  height: 45%;
+  width:100%;
+  /* background-color: #0071e3 */
+}
+
+.foot-divs {
+  height: 400px;
+  width:20%;
+}
+
+.bottom-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}

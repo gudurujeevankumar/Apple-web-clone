@@ -123,13 +123,11 @@ html {
 /* Iphone family section */
 
 .iphone-section {
-    height: 90dvh;
-    background-color: white;
-}
-
-.iphone-section img {
-    height: 98%;
-    width: 100%;
+  height: 90vh;
+  background-image: url("./media/Iphone\ 17\ series\ mobiles.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .iphone-content {
@@ -140,10 +138,9 @@ html {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    
     position: absolute;
-    top: 105vh;
     z-index: 2;
+    margin-top: 40px;
 }
 
 .iphone-content h2 {
@@ -187,18 +184,17 @@ html {
 /* Ipad Section */
 
 .ipad-section {
-    height: 90dvh;
-    background-color: white;
+  height: 80dvh;
+  background-image: url("./media/ipad-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.ipad-section img {
-    height: 98%;
-    width: 100%;
-}
 
 .ipad-content {
     height: 220px;
-    width: 100%;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,13 +202,12 @@ html {
     gap: 5px;
     
     position: absolute;
-    top: 205vh;
+    top: 200vh;
     z-index: 2;
 }
 
-.ipad-img{
-    height:50px;
-    width: 230px;
+.ipad-img-txt img{
+    height: 40px;
 }
 
 .ipad-content p {

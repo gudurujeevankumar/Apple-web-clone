@@ -266,3 +266,41 @@ html {
   margin: 10px;
   background-color: gray;
 }
+
+#card-1-img{
+  background-image: url("./media/macbook.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card-2-img{
+  background-image: url("./media/iwatch.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#card-3-img{
+  background-image: url("./media/watch-strap.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#card-4-img{
+  background-image: url("./media/airpods-pro.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#card-5-img{
+  background-image: url("./media/macbook-air.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#card-6-img{
+  background-image: url("./media/trade-in.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

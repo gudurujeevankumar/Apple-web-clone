@@ -1,9 +1,12 @@
+* {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 html {
     margin: 0px;
     box-sizing: border-box;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-
 /* Reset */
 * {
   margin: 0;
@@ -15,7 +18,7 @@ html {
 /* Header */
 .header {
   height: 44px;
-  background-color: #181818;
+  background-color: #000000c4;
   position: fixed;
   top: 0;
   width: 100%;
@@ -47,8 +50,8 @@ html {
 
 /* Bottom Banner */
 .banner {
-  margin-top: 44px;
-  height: 44px;
+  margin-top: 0px;
+  height: 100px;
   background-color: #1d1d1f;
   color: white;
   display: flex;
@@ -57,6 +60,9 @@ html {
   font-size: 14px;
 }
 
+.banner p{
+    margin-top: 50px;
+}
 .banner a {
   color: #2997ff;
   text-decoration: none;
@@ -113,3 +119,68 @@ html {
 .hero-content button:hover {
   background-color: #005bb5;
 }
+
+/* Iphone family section */
+
+.iphone-section {
+    height: 90dvh;
+    background-color: white;
+}
+
+.iphone-section img {
+    height: 98%;
+    width: 100%;
+}
+
+.iphone-content {
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+    position: absolute;
+    top: 105vh;
+    z-index: 2;
+}
+
+.iphone-content h2 {
+    font-size: 50px;
+}
+
+.iphone-content p {
+    font-size: 30px;
+    font-weight:310;
+}
+
+.iphone-section-btns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:400px;
+}
+
+.iphone-section-btns #btn1 {
+    background-color: #0171e3;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 350;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.iphone-section-btns #btn2 {
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 350;
+    color: #0171e3;
+    border: 1px solid #0171e3;
+    border-radius: 20px;
+}
+

@@ -256,15 +256,18 @@ html {
     "box-5 box-6"
 }
 
-.card-items {
+/* .card-items {
   background-color: aqua;
-}
+} */
 
 .img-div {
   height: 97%;
   width:97%;
   margin: 10px;
-  background-color: gray;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
 }
 
 #card-1-img{
@@ -304,3 +307,68 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* card content */
+
+.card-heading {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#span {
+  font-weight: 350;
+}
+
+.card-para {
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-btn-div {
+  display: flex;
+  gap: 18px;
+}
+.card-btn1 {
+   background-color: #0171e3;
+   height: 35px;
+   width: 105px;
+    font-size: 14px;
+    font-weight: 350;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.card-btn2 {
+  background-color: #ffffff00;
+  height: 35px;
+  width: 60px;
+    font-size: 14px;
+    font-weight: 350;
+    color: #0171e3;
+    border: 1px solid #0171e3;
+    border-radius: 20px;
+}
+
+.heading-white{
+  color: whitesmoke;
+  
+}
+.para-white {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.apple-logo-icon {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.apple-logo-icon-white {
+  font-size: 40px;
+  padding: 10px;
+  color: whitesmoke;
+}
+

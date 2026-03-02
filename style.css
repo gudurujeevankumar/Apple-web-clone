@@ -243,3 +243,26 @@ html {
     border: 1px solid #0171e3;
     border-radius: 20px;
 }
+
+/* Cards Section */
+
+.cards {
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-auto-rows: 600px;
+    grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4"
+    "box-5 box-6"
+}
+
+.card-items {
+  background-color: aqua;
+}
+
+.img-div {
+  height: 97%;
+  width:97%;
+  margin: 10px;
+  background-color: gray;
+}

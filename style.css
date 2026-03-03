@@ -445,3 +445,16 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+#btn2:hover ,.card-btn2:hover {
+  background-color: #0171e3;
+  color: whitesmoke;
+}
+
+#btn1:hover , .card-btn1:hover {
+  background-color: #0368cc;
+}
+
+button:hover {
+  cursor: pointer;
+}

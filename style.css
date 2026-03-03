@@ -1,12 +1,13 @@
 * {
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 html {
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+
 /* Reset */
 * {
   margin: 0;
@@ -60,9 +61,10 @@ html {
   font-size: 14px;
 }
 
-.banner p{
-    margin-top: 50px;
+.banner p {
+  margin-top: 50px;
 }
+
 .banner a {
   color: #2997ff;
   text-decoration: none;
@@ -131,54 +133,54 @@ html {
 }
 
 .iphone-content {
-    height: 220px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    position: absolute;
-    z-index: 2;
-    margin-top: 40px;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 40px;
 }
 
 .iphone-content h2 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .iphone-content p {
-    font-size: 30px;
-    font-weight:310;
+  font-size: 30px;
+  font-weight: 310;
 }
 
-.iphone-section-btns{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width:400px;
+.iphone-section-btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
 }
 
 .iphone-section-btns #btn1 {
-    background-color: #0171e3;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 350;
-    color: white;
-    border: none;
-    border-radius: 20px;
+  background-color: #0171e3;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 350;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 .iphone-section-btns #btn2 {
-    background-color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 350;
-    color: #0171e3;
-    border: 1px solid #0171e3;
-    border-radius: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 350;
+  color: #0171e3;
+  border: 1px solid #0171e3;
+  border-radius: 20px;
 }
 
 /* Ipad Section */
@@ -193,64 +195,64 @@ html {
 
 
 .ipad-content {
-    height: 220px;
-    width: 100dvw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    
-    position: absolute;
-    top: 200vh;
-    z-index: 2;
+  height: 220px;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  position: absolute;
+  top: 200vh;
+  z-index: 2;
 }
 
-.ipad-img-txt img{
-    height: 40px;
+.ipad-img-txt img {
+  height: 40px;
 }
 
 .ipad-content p {
-    font-size: 30px;
-    font-weight:310;
+  font-size: 30px;
+  font-weight: 310;
 }
 
-.ipad-section-btns{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width:400px;
+.ipad-section-btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
 }
 
 .ipad-section-btns #btn1 {
-    background-color: #0171e3;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 350;
-    color: white;
-    border: none;
-    border-radius: 20px;
+  background-color: #0171e3;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 350;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 .ipad-section-btns #btn2 {
-    background-color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 350;
-    color: #0171e3;
-    border: 1px solid #0171e3;
-    border-radius: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 350;
+  color: #0171e3;
+  border: 1px solid #0171e3;
+  border-radius: 20px;
 }
 
 /* Cards Section */
 
 .cards {
-    display: grid;
-    grid-auto-columns: 50%;
-    grid-auto-rows: 600px;
-    grid-template-areas:
+  display: grid;
+  grid-auto-columns: 50%;
+  grid-auto-rows: 600px;
+  grid-template-areas:
     "box-1 box-2"
     "box-3 box-4"
     "box-5 box-6"
@@ -262,7 +264,7 @@ html {
 
 .img-div {
   height: 97%;
-  width:97%;
+  width: 97%;
   margin: 10px;
   display: flex;
   gap: 15px;
@@ -270,38 +272,42 @@ html {
   align-items: center;
 }
 
-#card-1-img{
+#card-1-img {
   background-image: url("./media/macbook.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#card-2-img{
+#card-2-img {
   background-image: url("./media/iwatch.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#card-3-img{
+
+#card-3-img {
   background-image: url("./media/watch-strap.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#card-4-img{
+
+#card-4-img {
   background-image: url("./media/airpods-pro.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#card-5-img{
+
+#card-5-img {
   background-image: url("./media/macbook-air.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#card-6-img{
+
+#card-6-img {
   background-image: url("./media/trade-in.png");
   background-position: center;
   background-size: cover;
@@ -330,32 +336,34 @@ html {
   display: flex;
   gap: 18px;
 }
+
 .card-btn1 {
-   background-color: #0171e3;
-   height: 35px;
-   width: 105px;
-    font-size: 14px;
-    font-weight: 350;
-    color: white;
-    border: none;
-    border-radius: 20px;
+  background-color: #0171e3;
+  height: 35px;
+  width: 105px;
+  font-size: 14px;
+  font-weight: 350;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 .card-btn2 {
   background-color: #ffffff00;
   height: 35px;
   width: 60px;
-    font-size: 14px;
-    font-weight: 350;
-    color: #0171e3;
-    border: 1px solid #0171e3;
-    border-radius: 20px;
+  font-size: 14px;
+  font-weight: 350;
+  color: #0171e3;
+  border: 1px solid #0171e3;
+  border-radius: 20px;
 }
 
-.heading-white{
+.heading-white {
   color: whitesmoke;
-  
+
 }
+
 .para-white {
   color: whitesmoke;
   text-align: center;
@@ -375,7 +383,7 @@ html {
 /* Footer section */
 
 footer {
-  height:110dvh;
+  height: 110dvh;
   background-color: #f5f5f7;
 }
 
@@ -386,32 +394,54 @@ footer {
   margin-top: 20px;
 }
 
-footer p , a{
+footer p{
   font-size: 12px;
   color: #8e8e90;
   padding-top: 30px;
   text-decoration: none;
-    line-height: 1.3333733333;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.foot-links {
-  display: flex;
-  gap:5px;
-  height: 45%;
-  width:100%;
-  /* background-color: #0071e3 */
-}
-
-.foot-divs {
-  height: 400px;
-  width:20%;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .bottom-foot {
   display: flex;
   justify-content: space-between;
   align-items: end;
+}
+
+
+.foot-links {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: space-between; */
+  /* background-color: red; */
+}
+
+.foot-divs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.foot-divs a ,h4,a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #8e8e90;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h4 {
+  color: #383839;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
